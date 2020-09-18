@@ -1,7 +1,8 @@
-package com.hunliji.integration_mw
+package com.xueyu.applicationproxy
 
 import android.content.Context
 import android.content.pm.PackageManager
+import java.util.*
 
 /**
  * ManifestParser

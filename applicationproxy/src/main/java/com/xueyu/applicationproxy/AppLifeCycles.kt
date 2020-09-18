@@ -1,4 +1,4 @@
-package com.hunliji.integration_mw
+package com.xueyu.applicationproxy
 
 
 import android.app.Application
