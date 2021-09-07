@@ -4,13 +4,6 @@ import android.content.Context
 import android.content.pm.PackageManager
 import java.util.*
 
-/**
- * ManifestParser
- *
- * @author wm
- * @date 19-8-14
- */
-
 class ManifestParser constructor(private val context: Context) {
     companion object {
         private const val MODULE_VALUE = "ConfigModule"

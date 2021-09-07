@@ -3,12 +3,7 @@ package com.xueyu.applicationproxy
 import android.app.Application
 import android.content.Context
 
-/**
- * AppDelegate
- *
- * @author wm
- * @date 19-8-19
- */
+
 class AppDelegate(context: Context) : AppLifeCycles {
     private var mModules: List<ConfigModule>? = null
 
@@ -17,7 +12,9 @@ class AppDelegate(context: Context) : AppLifeCycles {
     }
 
     override fun onCreate(application: Application) {
-        mModules?.forEach {
+        mModules?.sortedBy {
+            it.getPriority()
+        }?.forEach {
             it.injectApp(application)
         }
     }
